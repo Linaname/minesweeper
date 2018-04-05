@@ -6,8 +6,9 @@
     <style>
         td {
             border: 1px solid black;
-            height: 21px;
-            min-width: 21px;
+            height: 35px;
+            min-width: 35px;
+            font-size: 25px;
             text-align: center;
         }
         td.flag {
@@ -86,6 +87,7 @@
         }
         .field {
             border-collapse: collapse;
+            border-spacing: 0px;
             position: absolute;
             table-layout: fixed;
         }
@@ -109,11 +111,11 @@
                 rowsNumber = +height.value;
                 columnsNumber = +width.value;
                 minesNumber = +mines.value;
-                newGame();
+                newGame(rowsNumber, columnsNumber, minesNumber);
             }
         }
 
-        function newGame(){
+        function newGame(rowsNumber, columnsNumber, minesNumber){
             fieldplace.style.width = document.documentElement.clientWidth-16+'px';
             fieldplace.style.height = document.documentElement.clientHeight-info.getBoundingClientRect().bottom-8+'px';
             fieldplace.innerHTML = '';
