@@ -8,7 +8,7 @@
             border: 1px solid black;
             height: 35px;
             min-width: 35px;
-            font-size: 25px;
+            font-size: 20px;
             text-align: center;
         }
         td.flag {
@@ -94,14 +94,14 @@
     </style>
 </head>
 <body>
-    <form id="info">
+    <div id="info">
         <input type="button" id="btn" value="restart" onclick="restart()">
         <label>Height: <input type="text" id="height" value="10"/></label>
         <label>Width: <input type="text" id="width" value="10"/></label>
         <label>Mines: <input type="text" id="mines" value="13"/></label>
 
         <hr>
-    </form>
+    </div>
     <div id="fieldplace"></div>
     <script>
         restart();
